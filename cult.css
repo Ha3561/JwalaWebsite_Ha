@@ -15,7 +15,7 @@
 
 body {
   background: url("../img/bg.jpg") no-repeat center center/cover;
-  background-color: rgb(23, 6, 45);
+  background-color: rgba(255, 227, 194, 0.8);
   min-height: 100vh;
   font-family: "poppins", sans-serif;
   position: relative;
@@ -34,7 +34,7 @@ body::before {
 
 
 header {
-  background: rgba(49, 80, 208, 0.8);
+  background: rgba(30, 25, 25, 1);
   padding: 0.5rem 0;
   position: sticky; top: 0;
   z-index: 2000;
@@ -98,8 +98,41 @@ nav ul li :hover{
   font-weight: bold;
 }
 
-
-
+.custom-div {
+            background-color: rgba(23, 6, 45, 1); /* RGBA color */
+            width: 100%; /* Full width */
+            height: auto; /* Auto height */
+            color: white; /* Text color for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Michroma', sans-serif; /* Example font-family */
+            padding: 20px; /* Optional padding for content spacing */
+        } 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-list {
+  width: 100%; /* Adjust the width of the items */
+  max-width: 300px; /* Optional: limit the maximum width */
+}
+.swiper-pagination {
+  margin-top: 40px; /* Move the pagination dots below the slider */
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #000; /* Change button color */
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 1.5rem; /* Adjust icon size */
+}
+.swiper-button-next {
+  right: 10px; /* Positioning adjustment */
+}
+.swiper-button-prev {
+  left: 10px; /* Positioning adjustment */
+}
 /* main {
     display: flex;
     align-items: center;

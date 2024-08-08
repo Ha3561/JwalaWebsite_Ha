@@ -1,90 +1,176 @@
+
+<!-- Dear all I have made several comments in the document so that u can understand which code stands for what thing -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-    <script src="https://cdn.tailwindcss.com"></script> 
+    <title>JwalaMukhi Cultural</title>
+    <link rel="stylesheet" href="cult.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="css/fontawesome.css">
+     
+    <link rel="stylesheet" href="css/all.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
-    <link href="styles.css" rel="stylesheet">
 </head>
-<body class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-    <div class="min-h-screen"> 
-        <nav class="fixed w-full bg-slate-950 hover:bg-gradient-to-b from-red-900 to-slate-950 z-10">
-            <div class="flex items-center justify-between mx-4 py-3">
-                <div class="flex items-center space-x-2">
-                    <img src="images/Jwala_logo_small.png" alt="Jwala" class="h-15 w-25 mx-3" />
-                    <h1 class="text-red-500 text-2xl font-sans">Jwalamukhi</h1>
-                </div>
-                <div class="block lg:hidden">
-                    <button id="menu-button" class="text-red-500 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                </div>
-                <ul id="menu" class="hidden lg:flex space-x-4 mx-6">
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold hover:bg-slate-600 mx-1">Home</a></li>
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold hover:bg-slate-600 mx-1">About</a></li>
-                    <li><a href="cult.html" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold hover:bg-slate-600 mx-1">Cult</a></li>
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold hover:bg-slate-600 mx-1">Maintenance</a></li>
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold hover:bg-slate-600 mx-1">Mess</a></li>
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold hover:bg-slate-600 mx-1">Sports</a></li>
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold hover:bg-slate-600 mx-1">Alumni</a></li>
-                </ul>
-            </div>
-            <div id="mobile-menu" class="hidden lg:hidden">
-                <ul class="flex flex-col space-y-4 mx-6">
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold">Home</a></li>
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold">About</a></li>
-                    <li><a href="cult.html" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold">Cult</a></li>
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold">Maintenance</a></li>
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold">Mess</a></li>
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold">Sports</a></li>
-                    <li><a href="#" class="text-transparent text-xl bg-clip-text bg-gradient-to-b from-red-700 via-yellow-400 to-red-700 font-bold">Alumni</a></li>
-                </ul>
-            </div>
-        </nav>
 
-        <div class="flex flex-col items-center justify-center pt-19">
-            <div class='relative w-full max-w-screen-2xl'>
-                <div class='relative w-full'>
-                    <img src="images\jwalalegacy.jpg" alt="Jwala Legacy" class="w-full h-auto object-cover opacity-40 rounded-lg" />
-                    <h1 class='font-bold text-3xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-red-800 via-yellow-400 to-red-800 mb-4 absolute inset-0 flex items-center justify-center'>Welcome to Jwala</h1>
-                </div> 
+    
+<body>
+  <script src="js/app.js"></script>
+
+    <!-- HEADER CODE STARTS -->
+    <header>
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <img src="images\Jwala_logo_extra_small_2.png" alt="" />
+              <h2><span>Jwalamukhi</span></h2>
+            </div>
+            <ul>
+              <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+              </div>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="mess.html">Mess</a></li>
+              <li><a href="maint.html">Maintenance</a></li>
+              <li><a href="cult.html">Cultural</a></li>
+              <li><a href="sports.html">Sports</a></li>
+              <li><a href="alumni.html">Alumni</a></li>
+            </ul>
+            <div class="btn">
+              <i class="fas fa-bars menu-btn"></i>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- HEADER CODE ENDS -->
+      <div class="flex flex-col items-center justify-center pt-19 relative">
+        <div class='relative w-full max-w-screen-2xl'>
+            <div class='relative w-full'>
+                <img src="images/jwalalegacy.jpg" alt="Jwala Legacy" class="w-full h-auto object-cover opacity-70 rounded-lg" />
+                <h1 class='font-bold text-3xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-red-800 via-yellow-400 to-red-800 mb-4 absolute inset-0 flex items-center justify-center'>Welcome to Jwala</h1>
             </div> 
         </div> 
-
-        <div class="flex flex-col items-center justify-center my-5 w-full max-w-screen-2xl">
-            <h3 class="text-3xl text-transparent bg-clip-text bg-gradient-to-b from-red-800 via-yellow-400 to-red-800 font-bold mb-4">Gallery</h3>
-        </div> 
-
+        <div class="custom-div swiper-container">
+          <div class="swiper-wrapper">
+              <!-- Slides will be inserted here -->
+          </div>
+          <!-- Add Pagination --> 
+          <br>
+          <br>
+          <div class="swiper-pagination"></div>
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
         
-
-        <!--Custom Slider--> 
-        <main class="my-12"> 
-            <img src="C:\Users\Tanmay\OneDrive\Desktop\Personal\Jwalamukhi-Website\jwala_new\images\HomeGallery\1.jpg" alt="" class="slider" id="slider">
-            <img src= "C:\Users\Tanmay\OneDrive\Desktop\Personal\Jwalamukhi-Website\jwala_new\images\HomeGallery\2.jpg" alt="" class="slider" id="slider">
-            <img src="C:\Users\Tanmay\OneDrive\Desktop\Personal\Jwalamukhi-Website\jwala_new\images\HomeGallery\3.jpg" alt="" class="slider" id="slider">
-            <img src="C:\Users\Tanmay\OneDrive\Desktop\Personal\Jwalamukhi-Website\jwala_new\images\HomeGallery\4.jpg" alt="" class="slider" id="slider">
-
-        </main> 
-        <div class="nav flex justify-center space-x-4 my-4">
-            <button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800" onclick="goPrev()">Prev</button>
-            <button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800" onclick="goNext()">Next</button>
-        </div>
-        <br>
-        <br> 
-        <div class="relative mx-5 mt-20">
-            <div class="flex justify-center">
-                <button id="prevBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">Previous</button>
-                <button id="nextBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">Next</button>
-            </div>
-            <div class="overflow-x-auto mt-4">
-                <div class="grid grid-cols-3 gap-4" id="card-container"></div>
-            </div>
-        </div> 
-        <script src="js/app.js"></script>
+      
+         
     </div>
+     
+    <div class="flex flex-col custom-div">
+      <br>
+      <br>
+    </div> 
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const swiperWrapper = document.querySelector('.swiper-wrapper');
+            const htmlContent = `
+                <div class="swiper-slide slider-wrapper">
+                    <div class="card-list">
+                        <div class="flex flex-col items-center bg-white bg-opacity-50 backdrop-blur-sm border border-gray-300 rounded-lg p-4">
+                            <img src="https://drive.google.com/thumbnail?id=15UlU38bx7TfCDU3fMC226qzb2pD1-Qc9" alt="user-image" class="rounded-lg w-48 h-auto mb-4">
+                            <h2 class="user-name font-bold text-xl mb-2">Vatsal Jain</h2>
+                            <p class="user-designation text-gray-700 mb-4">Cultural Secretary</p>
+                            <div class="flex flex-row space-x-4">
+                                <a href="https://www.instagram.com/vatsaljain_/" class="text-pink-500 text-2xl">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/vatsaljain_" class="text-blue-500 text-2xl">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="mailto:vatsaljain@example.com" class="text-gray-500 text-2xl">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            
+            for (let i = 0; i < 10; i++) { // Change the number 10 to however many times you want to insert the content
+                swiperWrapper.insertAdjacentHTML('beforeend', htmlContent);
+            }
+
+            // Initialize Swiper
+            const swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+        });
+    </script>
+<!-- Footer code starts -->
+
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <div class="social-buttons">
+    
+    <a href="https://www.instagram.com/jwalamukhihostel/" class="social-buttons__button social-button social-button--instagram" aria-label="Instagram">
+      <i class="fab fa-instagram"></i></a></div>
+  </ul>
+  <!-- <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Mess</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Maintenance</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Cultural</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Sports</a></li>
+
+  </ul> -->
+  <p>&copy;Copyright Jwalamukhi | IIT Delhi </p>
+  <p>Hauz Khas, New Delhi 110016 </p>
+  <p>Reception: 112-659-6913 </p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- FOOTER CODE ENDS -->
+
+       
+      
+
 </body>
 </html>

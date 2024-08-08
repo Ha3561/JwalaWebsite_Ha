@@ -135,3 +135,33 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 
 // Initial render
 renderCards();
+;
+
+document.addEventListener('DOMContentLoaded', () => {
+    const customDiv = document.querySelector('.custom-div');
+    const htmlContent = `
+        <div class="slider-wrapper">
+            <div class="card-list">
+                <div class="flex flex-col items-center bg-white bg-opacity-50 backdrop-blur-sm border border-gray-300 rounded-lg p-4">
+                    <img src="https://drive.google.com/thumbnail?id=15UlU38bx7TfCDU3fMC226qzb2pD1-Qc9" alt="user-image" class="rounded-lg w-48 h-auto mb-4">
+                    <h2 class="user-name font-bold text-xl mb-2">Vatsal Jain</h2>
+                    <p class="user-designation text-gray-700 mb-4">Cultural Secretary</p>
+                    <div class="flex flex-row space-x-4">
+                        <a href="https://www.instagram.com/vatsaljain_/" class="text-pink-500 text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vatsaljain_" class="text-blue-500 text-2xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:vatsaljain@example.com" class="text-gray-500 text-2xl">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+    
+    for (let i = 0; i < 10; i++) { // Change the number 10 to however many times you want to insert the content
+        customDiv.insertAdjacentHTML('beforeend', htmlContent);
+    }
+})
